@@ -347,6 +347,12 @@ var LayoutPropTypes = {
    *  the component will shrink to its `minWidth` and `minHeight`.
    */
   flex: ReactPropTypes.number,
+  flexGrow: ReactPropTypes.number,
+  flexShrink: ReactPropTypes.number,
+  flexBasis: ReactPropTypes.oneOfType([
+    ReactPropTypes.number,
+    ReactPropTypes.string,
+  ]),
 
   /** `zIndex` controls which components display on top of others.
    *  Normally, you don't use `zIndex`. Components render according to
